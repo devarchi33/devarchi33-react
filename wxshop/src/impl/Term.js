@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Prgrph from '../interface/ContentParagraph';
 import data from '../data/TermData.js';
+import Links from '../navigator/Links';
 
 const Prgrphs = data.map(
     prgr => <div key={prgr.id}>
@@ -9,7 +10,7 @@ const Prgrphs = data.map(
 );
 
 const Term = (props) => (
-    <div>{Prgrphs}</div>
+    <div><Links/>{Prgrphs}</div>
 );
 
 export default Term;
