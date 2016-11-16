@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import Prgrph from '../interface/ContentParagraph';
-import data from '../data/TermData.js';
+import data from '../data/Data.js';
 import Links from '../navigator/Links';
 
-const Prgrphs = data.map(
+const Prgrphs = data.term.map(
     prgr => <div key={prgr.id}>
                 <Prgrph content={prgr}/>            
             </div> 

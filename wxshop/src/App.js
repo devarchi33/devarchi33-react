@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, hashHistory} from 'react-router'; 
+import {Router, Route, IndexRoute, hashHistory} from 'react-router'; 
 import Term from './impl/Term';
 
 // let MixinTermDiv = TermContent => class extends Component {
@@ -31,7 +31,9 @@ class App extends Component {
         return (
             <div>
                 <Router history={hashHistory}>
-                    <Route path="/" component={Term}></Route>
+                    <Route path="/">
+                        <IndexRoute component={Term}></IndexRoute>
+                    </Route>
                 </Router>
             </div>
         ); 
